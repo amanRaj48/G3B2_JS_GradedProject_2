@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Resume Page</title>
+    <link rel="stylesheet" href="jobselection6.css">
+</head>
+
+<body>
+
+    <div id="search">
+        <label for="job-search">Search by job:</label>
+        <input type="text" id="job-search">
+        <button id="search-button">Search</button>
+    </div>
+    <button id="previous-button" disabled>Previous</button>
+    <button id="next-button" disabled>Next</button>
+
+    <img src="./cv-icon.jpg" alt="CV Icon" class="right-floated">
+
+    <div id="applicant-container"></div>
+
+    <div class="header">
+    </div>
+
+    <span class="left-side">
+        <div class="personal-info">
+            <!-- Display personal information here -->
+        </div>
+        <div class="technical-skills">
+            <!-- Display technical skills here -->
+        </div>
+        <div class="hobbies">
+            <!-- Display hobbies here -->
+        </div>
+    </span>
+
+    <span class="main-panel">
+        <!-- Display of work experience, projects, education, Interns and achievements -->
+    </span>
+
+    <script src="jobselection6.js"></script>
+
+    <script>
+        // Set the session variable to indicate that the resume page has been visited
+        sessionStorage.setItem('visitedResumePage', 'true');
+    </script>
+
+</body>
+
+</html>

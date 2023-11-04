@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #90d0f3; /* Add a background color */
+}
+
+.header {
+  background-color: #6859c7;
+  color: #fff;
+  text-align: center;
+  padding: 1px;
+  margin-bottom: 1px;
+}
+
+.right-floated {
+  /* No float needed */
+  float: right;
+  margin-top: 2px;
+  margin-right: 3px;
+}
+
+h1,
+h2 {
+  margin: 0; /* Remove margin to align text properly */
+  padding: 20px; /* Add padding for spacing */
+}
+
+#search {
+  float: left;
+  margin-right: 20px;
+  margin-left: 600px;
+}
+
+.left-side {
+  width: 10%; /* Adjust the width as needed */
+  float: left;
+  background-color: #a4d4f4;
+  padding-left: 10px;
+}
+
+.main-panel {
+  width: 88%;
+  float: right;
+  background-color: #a4d4f4;
+  padding-left: 10px;
+  margin-top: -33px;
+  margin-bottom: 2px;
+}
+
+.left-side p {
+  text-align: right;
+}
+
+.left-side h3 {
+  background-color: #a9a2a2;
+}
+
+.main-panel p {
+  padding-left: 25px;
+}
+
+.main-panel .section:nth-last-child(n + 1):nth-last-child(-n + 3) > p::before {
+  content: '• '; /* You can customize the bullet character here */
+  margin-right: 5px; /* Adjust spacing between the bullet and text */
+}
+
+p {
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+}
+
+.main-panel .section:nth-child(1) p {
+  padding: 0.25px;
+  margin: 25px;
+}
